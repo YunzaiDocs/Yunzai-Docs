@@ -30,3 +30,24 @@ features:
   - title: 🚀 开源免费
     details: 完全开源，免费使用，欢迎贡献代码，共同完善功能
 ---
+
+<!-- 贡献者, 该部分后续由组件自动获取完成 -->
+
+<!-- <script setup>
+import { VPTeamMembers } from 'vitepress/theme'
+
+const members = [
+  {
+    avatar: 'https://github.com/114514.png',
+    name: '114514',
+    title: '22222',
+    links: [
+      { icon: 'github', link: 'https://github.com/yyx990803' }
+    ]
+  },
+]
+</script>
+
+# <center>感谢Yunzai-Bot所有贡献者</center>
+
+<VPTeamMembers size="small" :members="members" /> -->
