@@ -4,17 +4,17 @@ export default navbar([
   "/",
   {
     text: "Yunzai-Bot",
-    icon: "book",
+    // icon: "book",
     link: "https://gitee.com/Le-niao/Yunzai-Bot",
   },
   {
     text: "Miao-Yunzai",
-    icon: "book",
+    // icon: "book",
     link: "https://gitee.com/yoimiya-kokomi/Miao-Yunzai"
   },
   {
     text: "TRSS-Yunzai",
-    icon: "book",
+    // icon: "book",
     link: "https://gitee.com/TimeRainStarSky/Yunzai"
   }
 ]);

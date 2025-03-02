@@ -11,9 +11,9 @@ export default hopeTheme({
   //   url: "https://mister-hope.com",
   // },
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "/logo.png",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "DenFengLai/Yunzai-Docs",
 
   docsDir: "src",
 
@@ -24,7 +24,7 @@ export default hopeTheme({
   sidebar,
 
   // 页脚
-  footer: "默认页脚",
+  footer: "Copyright © 2025 Yunzai-Bot 文档",
   displayFooter: true,
 
   // 加密配置
@@ -129,7 +129,7 @@ export default hopeTheme({
     // },
 
     components: {
-      components: ["Badge", "VPCard"],
+      components: ["Badge", "VPCard", "VPBanner"],
     },
 
     icon: {
