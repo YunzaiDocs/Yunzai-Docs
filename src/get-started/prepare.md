@@ -1,6 +1,6 @@
 ---
 title: 运行环境
-# icon: signs-post
+icon: fa:download
 ---
 
 ### 硬件配置
