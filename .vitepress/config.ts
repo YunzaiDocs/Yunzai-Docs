@@ -23,6 +23,7 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
+
   vite: {
     optimizeDeps: { 
       exclude: [ 
@@ -35,7 +36,7 @@ export default defineConfig({
     ssr: { 
       noExternal: [ 
         '@nolebase/*'
-        
+
       ]
     },
     plugins: [
@@ -81,16 +82,16 @@ export default defineConfig({
       prev: '上一页',
       next: '下一页'
     },
-    lastUpdatedText: '⏳ 上次更新',
-    returnToTopLabel: '🔝 返回顶部',
-    sidebarMenuLabel: '📂 菜单',
+    lastUpdatedText: '上次更新',
+    returnToTopLabel: '返回顶部',
+    sidebarMenuLabel: '菜单',
     notFound: {
       title: '⚠️ 页面未找到',
-      quote: '💭 你来到了知识的荒原...',
-      linkText: '🏡 返回首页'
+      quote: '你来到了知识的荒原...',
+      linkText: '返回首页'
     },
-    lightModeSwitchTitle: '🌞 切换到浅色模式',
-    darkModeSwitchTitle: '🌙 切换到深色模式',
-    darkModeSwitchLabel: '🎨 主题模式',
+    lightModeSwitchTitle: '切换到浅色模式',
+    darkModeSwitchTitle: '切换到深色模式',
+    darkModeSwitchLabel: '主题模式',
   }
 })

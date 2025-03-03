@@ -6,9 +6,9 @@
   "packageManager": "pnpm@9.13.2",
   "repository": "https://github.com/DenFengLai/Yunzai-Docs",
   "scripts": {
-    "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
   },
   "devDependencies": {
     "@iconify/vue": "^4.3.0",
