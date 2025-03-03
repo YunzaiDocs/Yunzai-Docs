@@ -22,6 +22,9 @@ import {
 /** 双向链接 */
 import { BiDirectionalLinks } from '@nolebase/markdown-it-bi-directional-links'
 
+/** tabs组 */
+import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
+
 export default defineConfig({
   title: "Yunzai-Bot docs",
   lang: 'zh-CN',
@@ -108,6 +111,8 @@ export default defineConfig({
       md.use(InlineLinkPreviewElementTransform) 
       /** 双向链接 */
       md.use(BiDirectionalLinks()) 
+      /** tabs组 */
+      md.use(tabsMarkdownPlugin)
     } 
   }
 })

@@ -23,6 +23,9 @@ import {
 } from '@nolebase/vitepress-plugin-inline-link-preview/client'
 import '@nolebase/vitepress-plugin-inline-link-preview/client/style.css'
 
+/** tabs组 */
+import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
+
 export const Theme: ThemeConfig = {
   extends: DefaultTheme,
   enhanceApp({ app }: { app: App }) {
@@ -37,6 +40,8 @@ export const Theme: ThemeConfig = {
     app.component('Pill', DocPill) 
     app.component('Links', DocLinks) 
     app.component('BoxCube', DocBoxCube) 
+    /** tabs组 */
+    enhanceAppWithTabs(app)
     /** 图标库 */
     app.component('Icon', Icon)
     /** 阅读增强 */
