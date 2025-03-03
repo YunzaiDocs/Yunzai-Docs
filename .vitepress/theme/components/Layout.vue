@@ -4,6 +4,7 @@
 import { useData } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import { nextTick, provide } from 'vue'
+import ReadTime from './ReadTime.vue'
 
 /** 阅读增强 */
 import { 
@@ -14,6 +15,7 @@ import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 
 /** 面包屑导航 */
 import { NolebaseBreadcrumbs } from '@nolebase/vitepress-plugin-breadcrumbs/client'
+
 
 const { isDark } = useData()
 /** 设置默认主题为亮色模式 */
@@ -55,8 +57,8 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
 
 <template>
   <DefaultTheme.Layout>
-        <!-- 阅读增强，页面右上角小书本 -->
-        <template #nav-bar-content-after>
+      <!-- 阅读增强，页面右上角小书本 -->
+    <template #nav-bar-content-after>
       <NolebaseEnhancedReadabilitiesMenu />
     </template>
     <template #nav-screen-content-after>
@@ -65,6 +67,7 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
     <!-- 面包屑导航 -->
     <template #doc-before>
       <NolebaseBreadcrumbs />
+      <ReadTime />
     </template>
   </DefaultTheme.Layout>
 </template>

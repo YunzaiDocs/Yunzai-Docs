@@ -11,10 +11,13 @@
     "preview": "vitepress preview"
   },
   "devDependencies": {
+    "@theojs/lumen": "^5.4.0",
     "@iconify/vue": "^4.3.0",
+    "@nolebase/markdown-it-bi-directional-links": "^2.15.0",
     "@nolebase/vitepress-plugin-breadcrumbs": "^2.15.0",
     "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.15.0",
     "@nolebase/vitepress-plugin-git-changelog": "^2.15.0",
+    "@nolebase/vitepress-plugin-inline-link-preview": "^2.15.0",
     "@types/node": "^22.13.8",
     "ant-design-vue": "^4.2.6",
     "unplugin-auto-import": "^19.1.1",

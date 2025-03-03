@@ -5,6 +5,7 @@ import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers'
 import nav from './config/nav'
 import sidebar from './config/sidebar'
 import Version from './config/version'
+import search from './config/search'
 
 /** git更新日志 */
 import { 
@@ -13,6 +14,13 @@ import {
 } from '@nolebase/vitepress-plugin-git-changelog/vite'
 /** 面包屑导航 */
 import { generateBreadcrumbsData } from '@nolebase/vitepress-plugin-breadcrumbs/vitepress'
+
+/** 行内链接预览 */
+import { 
+  InlineLinkPreviewElementTransform 
+} from '@nolebase/vitepress-plugin-inline-link-preview/markdown-it'
+/** 双向链接 */
+import { BiDirectionalLinks } from '@nolebase/markdown-it-bi-directional-links'
 
 export default defineConfig({
   title: "Yunzai-Bot docs",
@@ -29,6 +37,7 @@ export default defineConfig({
       exclude: [ 
         '@nolebase/vitepress-plugin-breadcrumbs/client',
         '@nolebase/vitepress-plugin-enhanced-readabilities/client', 
+        '@nolebase/vitepress-plugin-inline-link-preview/client',
         'vitepress', 
         '@nolebase/ui',
       ] 
@@ -46,6 +55,7 @@ export default defineConfig({
       Components({
         resolvers: [AntDesignVueResolver()],
       }),
+      /** git提交记录 */
       GitChangelog({ 
         repoURL: () => Version.getRepositoryUrl(), 
         maxGitLogCount: 20
@@ -65,9 +75,7 @@ export default defineConfig({
     logo: '/logo.png',
     nav,
     sidebar,
-    search: {
-      provider: 'local'
-    },
+    search,
     footer: {
       message: 'Released under the MIT License.',
       copyright: '© 2025-present <a href="#">Yunzai-Bot</a>',
@@ -93,5 +101,13 @@ export default defineConfig({
     lightModeSwitchTitle: '切换到浅色模式',
     darkModeSwitchTitle: '切换到深色模式',
     darkModeSwitchLabel: '主题模式',
+  },
+  markdown: { 
+    config(md) { 
+      /** 行内链接预览 */
+      md.use(InlineLinkPreviewElementTransform) 
+      /** 双向链接 */
+      md.use(BiDirectionalLinks()) 
+    } 
   }
 })
