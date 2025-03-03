@@ -25,7 +25,9 @@ export default hopeTheme({
 
   sidebar,
 
-  footer: "Copyright © 2025 Yunzai-Bot 文档",
+  copyright: "Copyright © 2025 Yunzai-Bot 文档",
+
+  // footer: "页脚",
 
   displayFooter: true,
 

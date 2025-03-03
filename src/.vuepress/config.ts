@@ -6,7 +6,7 @@ export default defineUserConfig({
   base: "/",
 
   lang: "zh-CN",
-  title: "Yunzai-Bot 文档",
+  title: "Yunzai-Bot Docs",
   description: "vuepress-theme-hope 的文档演示",
 
   theme,

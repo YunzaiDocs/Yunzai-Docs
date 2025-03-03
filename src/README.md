@@ -13,8 +13,8 @@ actions:
     link: ./get-started/
     type: primary
 
-  # - text: 了解更多
-  #   link: ./guide/
+  - text: 项目简介
+    link: ./brief
 
 copyright: false
 # footer: 
