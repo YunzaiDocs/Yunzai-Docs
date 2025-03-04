@@ -58,7 +58,7 @@ Git <Badge type="warning" text="可选，但推荐安装" />
 
 == Android
 
-咕咕咕...
+要求: `Android 7.0` 或更高版本
 
 :::
 
@@ -76,7 +76,7 @@ Git <Badge type="warning" text="可选，但推荐安装" />
 
 使用PPA源安装最新LTS版本
 ```bash
-curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && apt-get install -y nodejs
+set -e; curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && apt-get install -y nodejs
 ```
 
 == MacOS
