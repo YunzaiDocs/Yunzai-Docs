@@ -4,7 +4,11 @@
 import { useData } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import { nextTick, provide } from 'vue'
+
+/** 阅读时间 */
 import ReadTime from './ReadTime.vue'
+/** 返回顶部 */
+import backtotop from './backtotop.vue'
 
 /** 阅读增强 */
 import { 
@@ -68,6 +72,7 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
     <template #doc-before>
       <NolebaseBreadcrumbs />
       <ReadTime />
+      <backtotop />
     </template>
   </DefaultTheme.Layout>
 </template>
