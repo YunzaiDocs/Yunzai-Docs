@@ -58,7 +58,15 @@ Git <Badge type="warning" text="可选，但推荐安装" />
 
 == Android
 
-要求: `Android 7.0` 或更高版本
+要求: `Android 7.0` 或更高版本, [ZeroTermux](https://od.ixcmstudio.cn/repository/main/ZeroTermux/),然后执行下面的脚本进行安装
+
+```bash
+pkg install proot git python -y
+git clone https://github.com/sqlsec/termux-install-linux
+cd termux-install-linux
+python termux-linux-install.py
+```
+选择自己喜欢的系统
 
 :::
 
