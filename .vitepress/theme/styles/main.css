@@ -1,7 +1,9 @@
 .VPSocialLinks.VPNavBarSocialLinks.social-links {
   margin-right: 0;
 }
-.fa-solid, .fa-regular, .fa-brands {
+.fa-solid,
+.fa-regular,
+.fa-brands {
   width: 1.2em;
   vertical-align: middle;
   text-align: center;

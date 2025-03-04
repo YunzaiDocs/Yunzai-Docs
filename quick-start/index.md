@@ -26,7 +26,7 @@ Yunzai-Bot 的核心架构主要包括以下几个部分：
   负责处理 Bot 登录、消息接收与解析，并通过统一的命令调度机制将消息分发给对应的插件。
 
 - **配置系统**  
-  所有配置文件均存放于专用目录（例如 `config/config/qq.yaml`、`bot.yaml` 等），用户只需修改这些文件即可调整登录信息、命令设置、插件参数等。  
+  所有配置文件均存放于专用目录（例如 `config/config/qq.yaml`、`bot.yaml` 等），用户只需修改这些文件即可调整登录信息、命令设置、插件参数等。
 
 - **插件机制**  
   插件分为单 JS 文件插件和大型扩展插件两大类，支持动态加载与热更新。开发者可以参考示例代码（如 `plugins/example` 下的内容）快速编写并调试自己的插件。
@@ -71,15 +71,14 @@ Yunzai-Bot 拥有一个活跃的开源社区，主要集中在 GitHub、Gitee �
 *Miao-Yunzai*基于原版*Yunzai-Bot*改造而来，由[喵喵(yoimiya-kokomi)](https://gitee.com/yoimiya-kokomi)维护。改进了项目结构，使用`ICQQ.js`替代已停止更新的[oicq](https://github.com/takayama-lily/oicq)，解决了当时的账号登录问题，同时移除了原版自带的签到功能并且需要同时安装Miao-Plugin才能正常使用。
 == TRSS-Yunzai
 
-*TRSS-Yunzai* 是由[时雨◎星空(TimeRainStarSky)](https://gitee.com/TimeRainStarSky)基于 *Miao-Yunzai* 改进而来，支持了更多的协议端和OneBotv11协议，让 *Yunzai* 不再局限于 QQ 平台
+_TRSS-Yunzai_ 是由[时雨◎星空(TimeRainStarSky)](https://gitee.com/TimeRainStarSky)基于 _Miao-Yunzai_ 改进而来，支持了更多的协议端和OneBotv11协议，让 _Yunzai_ 不再局限于 QQ 平台
+
 <!-- > 支持协议端：OneBotv11、ComWeChat、GSUIDCore、ICQQ、QQBot、QQ频道、微信、KOOK、Telegram、Discord、OPQBot、Lagrange -->
 
-*TRSS-Yunzai* 对底层代码结构进行了重构，优化了若干冗余代码，对性能和用户体验有很大提升。同时支持了使用命令行标准输入与Bot交互，使得在无法接入平台时依然能进行一些管理或调试。
+_TRSS-Yunzai_ 对底层代码结构进行了重构，优化了若干冗余代码，对性能和用户体验有很大提升。同时支持了使用命令行标准输入与Bot交互，使得在无法接入平台时依然能进行一些管理或调试。
 
-由于 *TRSS-Yunzai* 相较于原版改动优化的地方过多，部分习惯使用Yunzai的用户可能会出现不适应、不知道如何使用和登录等情况，对于如何使用可以查看以下文章(先咕着，有空写)
+由于 _TRSS-Yunzai_ 相较于原版改动优化的地方过多，部分习惯使用Yunzai的用户可能会出现不适应、不知道如何使用和登录等情况，对于如何使用可以查看以下文章(先咕着，有空写)
 :::
-
-
 
 ## 8. 总结
 

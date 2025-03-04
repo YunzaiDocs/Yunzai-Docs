@@ -30,7 +30,7 @@
           :stroke-dashoffset="progressOffset"
         />
       </svg>
-      <img src="/icon/backtotop.svg" alt="返回顶部" class="icon-img">
+      <img src="/icon/backtotop.svg" alt="返回顶部" class="icon-img" />
     </div>
   </Transition>
 </template>
@@ -49,7 +49,8 @@ const progressOffset = ref(circumference);
 
 const onScroll = () => {
   const scrollTop = window.scrollY;
-  const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const scrollHeight =
+    document.documentElement.scrollHeight - window.innerHeight;
   scrollProgress.value = scrollTop / scrollHeight;
   progressOffset.value = circumference * (1 - scrollProgress.value);
   showBackTop.value = scrollTop > 100;
@@ -107,7 +108,7 @@ onBeforeUnmount(() => {
   transform: translateY(-5px);
 }
 .vitepress-backTop-main.dark-mode:hover {
-  background-color: #333; 
+  background-color: #333;
   box-shadow: 4px 4px 14px 6px rgba(0, 169, 233, 0.2);
 }
 

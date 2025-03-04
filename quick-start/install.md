@@ -5,14 +5,15 @@
 ::: details 点我展开
 ::: tabs
 == Windows
-  - 最低配置: 2 核 CPU，2 GB 内存，20-30 GB 硬盘。
-  - 推荐配置: 2-4 核 CPU，4 GB 内存，50 GB 硬盘。
-== Linux
-  - 最低配置：0.5 核 CPU，1 GB 内存，10 GB 硬盘。(某些群友跑过，但性能不理想)
-  - 推荐配置: 2 核 CPU，2 GB 内存，20 GB 硬盘。
-== Android
-  - 能装Termux的手机，具体自己判断
-:::
+
+- 最低配置: 2 核 CPU，2 GB 内存，20-30 GB 硬盘。
+- 推荐配置: 2-4 核 CPU，4 GB 内存，50 GB 硬盘。
+  == Linux
+- 最低配置：0.5 核 CPU，1 GB 内存，10 GB 硬盘。(某些群友跑过，但性能不理想)
+- 推荐配置: 2 核 CPU，2 GB 内存，20 GB 硬盘。
+  == Android
+- 能装Termux的手机，具体自己判断
+  :::
 
 ## 2. 环境准备
 
@@ -42,7 +43,9 @@ Git <Badge type="warning" text="可选，但推荐安装" />
 />
 
 ## 3. 环境安装
+
 ### 1. 系统
+
 ::: tabs
 == Windows
 
@@ -66,6 +69,7 @@ git clone https://github.com/sqlsec/termux-install-linux
 cd termux-install-linux
 python termux-linux-install.py
 ```
+
 选择自己喜欢的系统
 
 :::
@@ -83,6 +87,7 @@ python termux-linux-install.py
 == Linux
 
 使用PPA源安装最新LTS版本
+
 ```bash
 set -e; curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && apt-get install -y nodejs
 ```
@@ -102,9 +107,11 @@ set -e; curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && apt-get ins
 ```bash
 node -v
 ```
+
 检查是否有输出，如果没有，请重新安装。
 
 ### 3. 安装 pnpm
+
 为什么要安装`pnpm`, 她与`npm`的优势
 ::: details 点我展开
 
@@ -117,15 +124,21 @@ node -v
 :::
 
 执行以下命令以安装 `pnpm`：
+
 ```bash
 npm install -g pnpm
 ```
+
 如不可用请使用`镜像源`安装
+
 ```bash
 npm install -g pnpm --registry=https://registry.npmmirror.com
 ```
+
 运行以下命令以检查 `pnpm` 的安装情况：
-```bash 
-pnpm -v 
+
+```bash
+pnpm -v
 ```
+
 检查是否有输出，如果没有，请重新安装。

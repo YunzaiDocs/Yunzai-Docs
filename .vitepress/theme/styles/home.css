@@ -1,5 +1,17 @@
-:root{
+:root {
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(90deg, #6a64f6, #a96ddf, #c77fcd, #a789c9);
-  --vp-home-hero-name-background: linear-gradient(90deg, #6a64f6, #a96ddf, #c77fcd, #a789c9);
+  --vp-home-hero-name-background: -webkit-linear-gradient(
+    90deg,
+    #6a64f6,
+    #a96ddf,
+    #c77fcd,
+    #a789c9
+  );
+  --vp-home-hero-name-background: linear-gradient(
+    90deg,
+    #6a64f6,
+    #a96ddf,
+    #c77fcd,
+    #a789c9
+  );
 }
