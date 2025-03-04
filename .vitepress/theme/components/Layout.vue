@@ -1,9 +1,7 @@
-<!-- .vitepress/theme/MyLayout.vue -->
-
 <script setup lang="ts">
 import { useData } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
-import { nextTick, provide } from 'vue'
+import { nextTick, provide, onMounted } from 'vue'
 
 /** 阅读时间 */
 import ReadTime from './ReadTime.vue'
@@ -20,11 +18,16 @@ import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 /** 面包屑导航 */
 import { NolebaseBreadcrumbs } from '@nolebase/vitepress-plugin-breadcrumbs/client'
 
-
 const { isDark } = useData()
-/** 设置默认主题为亮色模式 */
-isDark.value = false
 
+onMounted(() => {
+  const storedTheme = localStorage.getItem('user-theme')
+  if (storedTheme) {
+    isDark.value = storedTheme === 'dark'
+  }
+})
+
+// 是否启用切换动画
 const enableTransitions = () =>
   'startViewTransition' in document &&
   window.matchMedia('(prefers-reduced-motion: no-preference)').matches
@@ -32,6 +35,7 @@ const enableTransitions = () =>
 provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
   if (!enableTransitions()) {
     isDark.value = !isDark.value
+    localStorage.setItem('user-theme', isDark.value ? 'dark' : 'light')
     return
   }
 
@@ -45,6 +49,7 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
 
   await document.startViewTransition(async () => {
     isDark.value = !isDark.value
+    localStorage.setItem('user-theme', isDark.value ? 'dark' : 'light')
     await nextTick()
   }).ready
 
@@ -61,7 +66,7 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
 
 <template>
   <DefaultTheme.Layout>
-      <!-- 阅读增强，页面右上角小书本 -->
+    <!-- 阅读增强，页面右上角小书本 -->
     <template #nav-bar-content-after>
       <NolebaseEnhancedReadabilitiesMenu />
     </template>
