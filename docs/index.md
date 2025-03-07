@@ -2,18 +2,18 @@
 layout: home
 
 hero:
-  name: "Yunzai-Bot 文档"
-  text: "一个功能强大的原神机器人"
-  tagline: "通过米游社接口查询原神游戏信息，并生成精美图片返回"
+  name: 'Yunzai-Bot 文档'
+  text: '一个功能强大的原神机器人'
+  tagline: '通过米游社接口查询原神游戏信息，并生成精美图片返回'
   image:
     src: /logo.png
     alt: logo
   actions:
     - theme: brand
-      text: "📦️ 开始使用"
+      text: '📦️ 开始使用'
       link: /quick-start
     - theme: alt
-      text: "🔎 了解更多"
+      text: '🔎 了解更多'
       link: /about
 
 features:

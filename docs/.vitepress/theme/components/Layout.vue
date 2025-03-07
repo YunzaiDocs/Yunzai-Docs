@@ -1,41 +1,38 @@
 <script setup lang="ts">
-import { useData } from "vitepress";
-import DefaultTheme from "vitepress/theme";
-import { nextTick, provide, onMounted } from "vue";
+import { useData } from 'vitepress';
+import DefaultTheme from 'vitepress/theme';
+import { nextTick, provide, onMounted } from 'vue';
 
 /** 阅读时间 */
-import ReadTime from "./ReadTime.vue";
+import ReadTime from './ReadTime.vue';
 /** 返回顶部 */
-import backtotop from "./backtotop.vue";
+import backtotop from './backtotop.vue';
 
 /** 阅读增强 */
 import {
   NolebaseEnhancedReadabilitiesMenu,
   NolebaseEnhancedReadabilitiesScreenMenu,
-} from "@nolebase/vitepress-plugin-enhanced-readabilities/client";
-import "@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css";
-
-/** 面包屑导航 */
-import { NolebaseBreadcrumbs } from "@nolebase/vitepress-plugin-breadcrumbs/client";
+} from '@nolebase/vitepress-plugin-enhanced-readabilities/client';
+import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css';
 
 const { isDark } = useData();
 
 onMounted(() => {
-  const storedTheme = localStorage.getItem("user-theme");
+  const storedTheme = localStorage.getItem('user-theme');
   if (storedTheme) {
-    isDark.value = storedTheme === "dark";
+    isDark.value = storedTheme === 'dark';
   }
 });
 
 // 是否启用切换动画
 const enableTransitions = () =>
-  "startViewTransition" in document &&
-  window.matchMedia("(prefers-reduced-motion: no-preference)").matches;
+  'startViewTransition' in document &&
+  window.matchMedia('(prefers-reduced-motion: no-preference)').matches;
 
-provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
+provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
   if (!enableTransitions()) {
     isDark.value = !isDark.value;
-    localStorage.setItem("user-theme", isDark.value ? "dark" : "light");
+    localStorage.setItem('user-theme', isDark.value ? 'dark' : 'light');
     return;
   }
 
@@ -49,7 +46,7 @@ provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
 
   await document.startViewTransition(async () => {
     isDark.value = !isDark.value;
-    localStorage.setItem("user-theme", isDark.value ? "dark" : "light");
+    localStorage.setItem('user-theme', isDark.value ? 'dark' : 'light');
     await nextTick();
   }).ready;
 
@@ -57,8 +54,8 @@ provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
     { clipPath: isDark.value ? clipPath.reverse() : clipPath },
     {
       duration: 300,
-      easing: "ease-in",
-      pseudoElement: `::view-transition-${isDark.value ? "old" : "new"}(root)`,
+      easing: 'ease-in',
+      pseudoElement: `::view-transition-${isDark.value ? 'old' : 'new'}(root)`,
     },
   );
 });
@@ -73,9 +70,7 @@ provide("toggle-appearance", async ({ clientX: x, clientY: y }: MouseEvent) => {
     <template #nav-screen-content-after>
       <NolebaseEnhancedReadabilitiesScreenMenu />
     </template>
-    <!-- 面包屑导航 -->
     <template #doc-before>
-      <NolebaseBreadcrumbs />
       <ReadTime />
       <backtotop />
     </template>

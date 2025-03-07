@@ -74,6 +74,7 @@ python termux-linux-install.py
 
 :::
 
+
 ### 2. Node.js
 
 我们推荐使用最新长期支持版本(LTS)，详情查看<Pill name="Node.js官网" link="https://nodejs.org/zh-cn" />
@@ -125,19 +126,19 @@ node -v
 
 执行以下命令以安装 `pnpm`：
 
-```bash
+```bash [npm]
 npm install -g pnpm
 ```
 
 如不可用请使用`镜像源`安装
 
-```bash
+```bash [pnpm]
 npm install -g pnpm --registry=https://registry.npmmirror.com
 ```
 
 运行以下命令以检查 `pnpm` 的安装情况：
 
-```bash
+```bash [pnpm]
 pnpm -v
 ```
 

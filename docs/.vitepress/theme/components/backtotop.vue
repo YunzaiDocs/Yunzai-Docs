@@ -36,8 +36,8 @@
 </template>
 
 <script setup>
-import { onBeforeUnmount, onMounted, ref } from "vue";
-import { useData } from "vitepress";
+import { onBeforeUnmount, onMounted, ref } from 'vue';
+import { useData } from 'vitepress';
 
 const { isDark } = useData();
 const showBackTop = ref(false);
@@ -57,15 +57,15 @@ const onScroll = () => {
 };
 
 function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 onMounted(() => {
-  window.addEventListener("scroll", onScroll);
+  window.addEventListener('scroll', onScroll);
 });
 
 onBeforeUnmount(() => {
-  window.removeEventListener("scroll", onScroll);
+  window.removeEventListener('scroll', onScroll);
 });
 </script>
 
