@@ -1,6 +1,7 @@
 ---
 title: 运行环境
 icon: fa:download
+order: 1
 ---
 
 ## 硬件配置
@@ -74,7 +75,7 @@ Yunzai-Bot 使用 Redis 作为数据库，因此您需要安装并运行 Redis�
 
 ## 浏览器
 
-Yunzai-Bot 使用[puppeteer](https://github.com/puppeteer/puppeteer)进行浏览器控制并生成图片，因此您需要安装并运行 [Chrome](https://www.google.com/intl/zh-cn/chrome/)/[Chromium](https://www.chromium.org/getting-involved/download-chromium/)/[Edge](https://www.microsoft.com/en-us/edge/download)。
+Yunzai-Bot 使用[puppeteer](https://github.com/puppeteer/puppeteer)进行浏览器控制并生成图片，因此您需要安装并运行 [Chrome](https://www.google.com/intl/zh-cn/chrome/)/[Chromium](https://www.chromium.org/getting-involved/download-chromium/)/[Edge](https://www.microsoft.com/en-us/edge/download) 任意一个即可。
 
 ## PNPM
 

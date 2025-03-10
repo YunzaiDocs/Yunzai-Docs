@@ -1,6 +1,6 @@
 ---
 title: 项目简介
-icon: fa:book
+icon: book
 ---
 
 ## 1. 概述

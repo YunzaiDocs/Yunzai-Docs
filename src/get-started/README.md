@@ -20,3 +20,4 @@ actions:
 
 - [准备运行环境](./prepare.md)
 - [安装项目](./install.md)
+- [项目命令](./commmand.md)

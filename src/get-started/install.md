@@ -1,6 +1,7 @@
 ---
 title: 安装项目
 icon: folder-plus
+order: 2
 category:
   - 快速上手
   - 安装
@@ -8,8 +9,6 @@ category:
 ---
 
 本节将介绍如何安装Yunzai-Bot。
-
----
 
 ## 选择合适的安装位置
 
@@ -23,7 +22,7 @@ category:
 
 ## 克隆项目
 
-在终端中输入以下命令，克隆项目到本地：
+在终端中输入以下任一命令，克隆项目到本地：
 
 :::tabs#yz
 
@@ -76,9 +75,23 @@ git clone --depth=1 https://gitee.com/yoimiya-kokomi/miao-plugin.git ./plugins/m
 
 :::
 
-::: info
+## 安装依赖
+
+:::code-tabs
+
+@tab 生产环境
+
+```sh
+pnpm install -P
+```
+
+@tab 开发环境
+
+```sh
+pnpm install
+```
+
+## 相关链接
 
 - [Miao-Yunzai](https://github.com/yoimiya-kokomi/miao-plugin)
 - [TRSS-Yunzai](https://github.com/TimeRainStarSky/Yunzai)、
-
-:::

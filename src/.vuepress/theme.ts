@@ -14,7 +14,6 @@ export default hopeTheme({
   logo: "/logo.png",
 
   fullscreen: true,
-  
 
   repo: "DenFengLai/Yunzai-Docs",
 
