@@ -91,6 +91,8 @@ pnpm install -P
 pnpm install
 ```
 
+:::
+
 ## 相关链接
 
 - [Miao-Yunzai](https://github.com/yoimiya-kokomi/miao-plugin)
