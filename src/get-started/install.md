@@ -24,25 +24,40 @@ category:
 
 在终端中输入以下任一命令，克隆项目到本地：
 
-:::tabs#yz
+::: tabs#yz
 
 @tab Miao-Yunai
 
-```sh
-# 使用 Github 
-git clone --depth=1 https://github.com/yoimiya-kokomi/Miao-Yunzai.git
-# 使用Gitee
-git clone --depth=1 https://gitee.com/yoimiya-kokomi/Miao-Yunzai.git
-```
+  ::: code-tabs#git
+
+  @tab Github
+
+  ```sh
+  # 使用 Github 
+  git clone --depth=1 https://github.com/yoimiya-kokomi/Miao-Yunzai.git
+  ```
+
+  @tab Gitee
+
+  ```sh
+  git clone --depth=1 https://gitee.com/yoimiya-kokomi/Miao-Yunzai.git
+  ```
 
 @tab TRSS-Yunzai
 
-```sh
-# 使用 Github 
-git clone --depth 1 https://github.com/TimeRainStarSky/Yunzai
-# 使用Gitee
-git clone --depth 1 https://gitee.com/TimeRainStarSky/Yunzai
-```
+  ::: code-tabs#git
+
+  @tab Github
+
+  ```sh
+  git clone --depth 1 https://github.com/TimeRainStarSky/Yunzai
+  ```
+
+  @tab Gitee
+
+  ```sh
+  git clone --depth 1 https://gitee.com/TimeRainStarSky/Yunzai
+  ```
 
 :::
 
@@ -52,26 +67,33 @@ git clone --depth 1 https://gitee.com/TimeRainStarSky/Yunzai
 
 @tab Miao-Yunai
 
-必须安装[miao-plugin](https://github.com/yoimiya-kokomi/miao-plugin)
+  必须安装[miao-plugin](https://github.com/yoimiya-kokomi/miao-plugin)
 
-```sh
-# 使用 Github
-git clone --depth=1 https://github.com/yoimiya-kokomi/miao-plugin.git ./plugins/miao-plugin/
-# 使用 Gitee
-git clone --depth=1 https://gitee.com/yoimiya-kokomi/miao-plugin.git ./plugins/miao-plugin/
-```
+  ::: code-tabs#git
+
+  @tab Github
+
+  ```sh
+  git clone --depth=1 https://github.com/yoimiya-kokomi/miao-plugin.git ./plugins/miao-plugin/
+  ```
+
+  @tab Gitee
+
+  ```sh
+  git clone --depth=1 https://gitee.com/yoimiya-kokomi/miao-plugin.git ./plugins/miao-plugin/
+  ```
 
 @tab TRSS-Yunzai
 
-==可选==安装`genshin`、`miao-plugin`、`TRSS-Plugin`
+  可选安装`genshin`、`miao-plugin`、`TRSS-Plugin`
 
-启动项目后使用标准输入
+  启动项目后使用标准输入
 
-```text
-#安装genshin
-#安装miao-plugin
-#安装TRSS-Plugin
-```
+  ```text
+  #安装genshin
+  #安装miao-plugin
+  #安装TRSS-Plugin
+  ```
 
 :::
 
