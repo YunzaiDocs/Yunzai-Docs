@@ -18,7 +18,7 @@ actions:
 
 ### 教程章节
 
-- [准备运行环境](./prepare.md)
+- [安装环境](./prepare.md)
 - [安装项目](./install.md)
 - [项目命令](./command.md)
 - [项目结构](./structure.md)

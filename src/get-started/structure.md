@@ -24,33 +24,33 @@ order: 4
 │
 ├── data → 用户数据存放文件夹
 │
-│── lib → 框架核心模块
+├── lib → 框架核心模块
 │
-│── logs → 运行日志存储文件夹
+├── logs → 运行日志存储文件夹
 │
-│── node_modules → Nodejs 依赖包目录
+├── node_modules → Nodejs 依赖包目录
 │
-│── renderers → 渲染器模块目录
+├── renderers → 渲染器模块目录
 │
-│── resources → 静态资源存放目录
+├── resources → 静态资源存放目录
 │
-│── temp → 临时文件存放目录
+├── temp → 临时文件存放目录
 │
-│── plugins → 插件存放文件夹
+├── plugins → 插件存放文件夹
 │    │
-│    │── example → 示例插件与单js插件存放目录
+│    ├── example → 示例插件与单js插件存放目录
 │    │
-│    │── genshin → 原神/米游社功能插件
+│    ├── genshin → 原神/米游社功能插件
 │    │
-│    │── system → 框架系统功能
+│    ├── system → 框架系统功能
 │    │
-│    │── adapter (TRSS-Yunza) → 协议适配器
+│    ├── adapter (TRSS-Yunza) → 协议适配器
 │    │
-│    │── other → 其他功能
+│    ├── other → 其他功能
 │    │
 │    └── ... → 其他已安装插件
 │
-│── app.js → 框架运行入口文件
+├── app.js → 框架运行入口文件
 │ 
 └── package.json → Nodejs 配置文件
 ```

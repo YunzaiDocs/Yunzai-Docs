@@ -4,7 +4,7 @@ icon: fa:download
 order: 1
 ---
 
-## 硬件配置
+## 0. 硬件配置
 
 :::tabs#system
 
@@ -24,34 +24,15 @@ order: 1
 
 :::
 
-## 操作系统
+## 1.   Node.js
 
-Yunzai-Bot 支持的操作系统包括：
-
-- Windows
-- macOS
-- Linux
-- Android（通过Termux）
-
-::: tip
-
-当然如果您的操作系统可以安装并运行所需环境，那么您就可以尝试安装 Yunzai-Bot。
-
-:::
-
-## Node.Js
-
-Yunzai-Bot 基于 Node.js 运行，所以需要您需要安装 Node.js。
+Yunzai-Bot 基于 Node.js 运行，所以需要您==必须==要安装 Node.js。
 
 我们推荐使用最新长期支持版本(LTS)
 
   1. 进入[Node.js官网](https://nodejs.org/zh-cn)。
   2. 点击页面中的下载
-  3. 按提示安装
-
-::: tip
-
-如果您有使用 Node.js 的经验，您可以选择使用较新的版本
+  3. 按提示安装 (一直点下一步)
 
 ::: info 检查已安装版本
 
@@ -67,17 +48,51 @@ node -v
 
 :::
 
-## Redis
+## 2. Redis
 
 Yunzai-Bot 使用 Redis 作为数据库，因此您需要安装并运行 Redis。
 
 前往 [Redis官网](https://redis.io/download)下载并安装或者使用[Github Release](https://github.com/microsoftarchive/redis/releases)进行安装
 
-## 浏览器
+::: details Windows 安装教程
+[点我前往](https://blog.csdn.net/weixin_44893902/article/details/123087435)
+:::
 
-Yunzai-Bot 使用[puppeteer](https://github.com/puppeteer/puppeteer)进行浏览器控制并生成图片，因此您需要安装并运行 [Chrome](https://www.google.com/intl/zh-cn/chrome/)/[Chromium](https://www.chromium.org/getting-involved/download-chromium/)/[Edge](https://www.microsoft.com/en-us/edge/download) 任意一个即可。
+::: details Linux 安装教程
 
-## PNPM
+```sh
+apt-get update
+apt-get install redis-server
+```
+
+:::
+
+## 3. 浏览器
+
+Yunzai-Bot 使用[puppeteer](https://github.com/puppeteer/puppeteer)进行浏览器控制并生成图片，因此您需要安装下方任意一款浏览器。
+
+```component VPCard
+title: Chrome
+desc: 谷歌Chrome浏览器
+logo: https://www.google.com/chrome/static/images/chrome-logo.svg
+link: https://www.google.com/intl/zh-cn/chrome/
+```
+
+```component VPCard
+title: Chromium
+desc: 开源版Chrome
+logo: https://www.chromium.org/_assets/icon-chromium-96.png
+link: https://www.chromium.org/getting-involved/download-chromium/
+```
+
+```component VPCard
+title: Edge
+desc: 微软Edge浏览器
+logo: https://edgestatic.azureedge.net/welcome/static/favicon.png
+link: https://www.microsoft.com/en-us/edge/download
+```
+
+## 4. PNPM
 
 Yunzai-Bot 使用 PNPM 进行依赖管理，因此您需要安装并运行 PNPM。
 
@@ -85,7 +100,7 @@ Yunzai-Bot 使用 PNPM 进行依赖管理，因此您需要安装并运行 PNPM�
 npm install -g pnpm
 ```
 
-::: info NPM 换源
+::: tip NPM 换源
 
 当你无法使用 NPM 安装 PNPM 时，或者安装时间过长、出现网络问题，可以尝试更换国内源后重试。
 
@@ -95,8 +110,19 @@ npm config set registry https://registry.npmmirror.com
 
 :::
 
-## Git
+## 5. Git (可选)
 
-这是可选的，我们十分推荐你使用 Git 进行克隆拉取等操作，因为它可以让你使用`#更新`等命令实现实时更新。
+这是可选的，但我们十分推荐你使用 Git 进行克隆拉取等操作，因为它可以让你使用`#更新`等命令实现实时更新。
 
 您可以从 [Git官网](https://git-scm.com/) 下载并安装 Git。
+
+::: details Windows 安装教程
+[点我](https://blog.csdn.net/mukes/article/details/115693833)
+:::
+
+::: details Linux 安装教程
+
+```sh
+apt-get update
+apt-get install git
+```
