@@ -18,7 +18,7 @@ actions:
 
 ### 教程章节
 
-- [安装环境](./prepare.md)
-- [安装项目](./install.md)
-- [项目命令](./command.md)
-- [项目结构](./structure.md)
+1. [安装环境](./prepare.md)
+2. [安装项目](./install.md)
+3. [项目命令](./command.md)
+4. [项目结构](./structure.md)
