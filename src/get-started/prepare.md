@@ -126,3 +126,22 @@ npm config set registry https://registry.npmmirror.com
 apt-get update
 apt-get install git
 ```
+
+:::
+
+## 6. ffmpeg (可选)
+
+这是可选的，您在后续安装部分插件可能会看到要求搭配ffmpeg使用，例如：视频解析，音乐解析等需要通过ffmpeg来实现
+
+您可以从 [ffmpeg官网](https://ffmpeg.org/download.html) 下载并安装 ffmpeg
+
+::: details Windows 安装教程
+[点我](https://yunz.cc/289.html#H1-0)
+:::
+
+::: details Linux 安装教程
+
+```sh
+apt-get update
+apt-get install ffmpeg
+```
