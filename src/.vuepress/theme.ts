@@ -88,6 +88,9 @@ export default hopeTheme({
 
   // 插件配置
   plugins: {
+    copyCode: {
+      showInMobile: true
+    },
     
     // comment: {
     //   provider: "Waline",
