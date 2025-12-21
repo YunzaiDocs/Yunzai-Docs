@@ -8,11 +8,22 @@ order: 3
 
 在命令行执行的命令
 
-- `node app`: 启动
+- `node .` 或 `node app`: 启动Yunzai
+  - 前台启动项目 方便调试与交互
+
+- `pnpm run app`: 同上
+
 - `pnpm run start`: 使用[PM2](https://pm2.keymetrics.io/)启动
+  - 使用PM2后台启动项目，拥有进程守护、内存超限自动重启等功能，适合Linux脱离终端使用
+
 - `pnpm run log`: 查看运行日志
+  - 使用PM2运行时查看日志
+
 - `pnpm run stop`: 停止运行
+  - 停止PM2的运行
+
 - `pnpm run restart`: 重新启动
+  - PM2重启
 
 ## 机器人指令
 
@@ -24,7 +35,7 @@ order: 3
 - `#(全部)?(强制)?(静)?更新`: 拉取Git更新
 - `#状态/统计`: 获取运行状态/统计信息[^状态]
 
-[^设置主人]: 设置主人仅在 *TRSS-Yunzai* 上可用，*Miao-Yunzai* 可搭配第三方插件实现，默认不自带。
+[^设置主人]: 设置主人仅在 *TRSS-Yunzai* 上原生搭载，*Miao-Yunzai* 可搭配第三方插件实现，默认不自带。
 [^关机]: 在 *TRSS-Yunzai* 上，`#关机`为假关机(停止处理指令)，搭配`#开机`使用，如需停止进程请使用`#停机`命令。
 [^状态]: 如需进阶状态功能，请安装[椰奶插件](https://yenai.trss.me/)后使用`#椰奶状态`。
 

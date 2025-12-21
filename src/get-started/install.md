@@ -36,6 +36,7 @@ category:
 
 ::: info Windows打开终端
 使用文件管理器打开对应文件夹，在空白处右键选择`在终端中打开`(Win11)或在上方的地址栏中输入 `cmd` 并按下回车。
+  ::: tip 如果安装了Git Bash，也可以右击选择Git Bash打开
 :::
 
 ## 克隆项目
@@ -84,7 +85,8 @@ category:
 
 @tab Miao-Yunai
 
-  必须安装[miao-plugin](https://github.com/yoimiya-kokomi/miao-plugin)
+  ::: warning 必须安装 [miao-plugin](https://github.com/yoimiya-kokomi/miao-plugin)
+  :::
 
   ::: code-tabs#git
 
@@ -97,7 +99,8 @@ category:
   @tab Gitee
 
   ```sh
-  git clone --depth=1 https://gitee.com/yoimiya-kokomi/miao-plugin.git ./plugins/miao-plugin/
+  # 暂时挂了，用Gitcode
+  git clone --depth=1 https://gitcode.com/TimeRainStarSky/miao-plugin.git ./plugins/miao-plugin/
   ```
 
 @tab TRSS-Yunzai

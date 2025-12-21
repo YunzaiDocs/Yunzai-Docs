@@ -48,6 +48,11 @@ export default hopeTheme({
   hotReload: true,
 
   markdown: {
+    highlighter: {
+      type: 'shiki',
+      notationFocus: true,
+      notationHighlight: true
+    },
     align: true,
     attrs: true,
     codeTabs: true,
