@@ -11,7 +11,7 @@ tag:
 ::: info 如何获取插件
 你可以通过各种各样的渠道获取插件，包括但不限于: 代码开源平台、QQ群、搜索引擎、拼多多、闲鱼、博客、论坛等。
 
-此外社区拥有插件资源索引库，可以这这里获取到想要的资源。
+此外社区拥有插件资源索引库，可以在这里获取到想要的资源。
 - [Gitee](https://gitee.com/yhArcadia/Yunzai-Bot-plugins-index)
 - [GitHub](https://github.com/yhArcadia/Yunzai-Bot-plugins-index)
 :::
