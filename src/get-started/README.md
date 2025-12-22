@@ -4,22 +4,8 @@ icon: signs-post
 ---
 
 ::: tip 推荐使用脚本安装
-非常推荐Linux用户使用 [TRSS Script](https://trss.me/) 安装项目，环境部署维护一条龙，全程自动无需手动安装环境以及项目插件，还能方便快捷的控制自启动、多窗口、以及自动更新项目及插件，管理起来超方便（TRSS打钱）
-Windows用户也可以用，体验也是相当不错的
+非常推荐Linux用户使用 [TRSS Script](https://trss.me/) 安装项目，环境部署维护一条龙，全程自动无需手动安装环境以及项目插件，省去繁琐的安装和调试步骤，还能方便快捷的安装插件、控制自启动、多窗口、以及自动更新项目及插件，管理起来超方便。
 :::
-
-<!-- ```component VPBanner
-title: 快速开始
-background: var(--bg-10)
-color: var(--banner-text)
-actions:
-  - text: Windows
-    link: ./windows/
-  - text: Linux
-    link: ./linux/
-  - text: Android
-    link: ./android/
-``` -->
 
 ## 教程章节
 
@@ -30,3 +16,9 @@ actions:
 3. [项目命令](./command.md)
 
 4. [项目结构](./structure.md)
+
+5. [项目配置](./config.md)
+
+6. [接入平台](./platform.md)
+
+7. [插件支持](./plugins.md)

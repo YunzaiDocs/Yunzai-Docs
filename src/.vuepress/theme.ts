@@ -8,7 +8,7 @@ export default hopeTheme({
 
   author: {
     name: "等风来",
-    url: "https://dengfenglai.icu/",
+    url: "https://github.com/Denfenglai",
   },
 
   logo: "/logo.png",
@@ -26,6 +26,8 @@ export default hopeTheme({
   sidebar,
 
   copyright: "Copyright © 2025 Yunzai-Bot 文档",
+
+  externalLinkIcon: false,
 
   // footer: "页脚",
 
