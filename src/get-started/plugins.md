@@ -27,6 +27,7 @@ Yunzai 会在开机时读取 `plugins/**` 文件夹下的 **所有** `.js`的文
 ## 插件类型
 
 通常情况下，一个js文件就代表了一个插件/功能模块，社区通常称之为`单js插件`
+
 但对于所需功能较多的大型插件则以`插件包(plugin)`的形式发布
 这种情况下插件就不再是一个文件，而是一个“文件夹”。
 比如 `plugins/miao-plugin` 这就是一个文件夹形式的插件包，而 `plugins/example/主动复读.js` 就是一个单个js文件形式的插件
@@ -40,6 +41,10 @@ Yunzai 会在开机时读取 `plugins/**` 文件夹下的 **所有** `.js`的文
 > 但是，如果你不在意热重载功能，我还是建议可以在`plugins`文件夹下新建一个专门的文件夹用来放单js插件。
 
 ### 插件包
+
+::: tip
+插件安装命令请以插件项目主页所提供的命令为准，部分插件需要使用指定的插件名称。
+:::
 
 插件包就不太一样了，这类资源通常发布在开源代码托管平台，如: GitHub/Gitee/Gitcode等
 这种情况通常可以使用[`Git`](https://git-scm.com/book/zh/v2/起步-Git-是什么？)克隆仓库到`plugins`文件夹下
@@ -60,12 +65,12 @@ git clone https://github.com/xxxx/xxxx-plugin ./plugins/xxxx-plugin
 
 ## 安装依赖
 
-有很多插件它们需要额外安装外部依赖，具体情况请以其项目的README为准。
+有部分插件它们需要额外安装外部依赖，具体情况请以其项目的README为准。
 
 如果你在启动时发现插件加载报错/显示缺少依赖可以尝试在 **Yunzai的根目录** 运行 `pnpm install` 或者 `pnpm install -P`
 
 ::: warning
-如果单js插件缺少依赖，请勿直接在 Yunzai根目录 运行 `pnpm add xxx` ，永远不要携带`-w`参数，这会在你的项目根目录添加依赖并修改`package.json`从而导致后续更新冲突。
+如果单js插件缺少依赖，请勿直接在 `Yunzai根目录` 运行 `pnpm add xxx` ，不要携带`-w`参数，因为这会在你的项目根目录添加依赖并修改`package.json`从而导致后续更新冲突。
 
 正确的做法是在缺少依赖的单js插件的安装目录(如: plugins/example)下运行
 ```bash

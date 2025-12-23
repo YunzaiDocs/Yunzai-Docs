@@ -2,8 +2,6 @@
 
 使用[VuePress Theme Hope](https://theme-hope.vuejs.press/zh/)搭建的文档站点。
 
-部署于[vercel](vercel.com)
-
 ## 域
 
 - Yunzai-bot.com

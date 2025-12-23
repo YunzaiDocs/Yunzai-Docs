@@ -6,7 +6,7 @@ heroImage: /image.png
 bgImageStyle:
   background-attachment: fixed
 heroText: Yunai-Bot
-tagline: 一个强大的多功能原神机器人
+tagline: 一个强大的多功能聊天机器人
 actions:
   - text: 快速上手
     icon: lightbulb
@@ -37,8 +37,8 @@ features:
 
   - title: 插件支持
     icon: puzzle-piece
-    details: 社区拥有大量开源且免费的插件供用户安装使用
-    link: https://gitee.com/yhArcadia/Yunzai-Bot-plugins-index
+    details: 丰富且完善的插件
+    link: /get-started/plugins
 
   - title: 社区支持
     icon: users

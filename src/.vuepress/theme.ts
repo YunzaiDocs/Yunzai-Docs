@@ -7,15 +7,15 @@ export default hopeTheme({
   hostname: "https://Yunzai-Bot.com",
 
   author: {
-    name: "等风来",
-    url: "https://github.com/Denfenglai",
+    name: "YunzaiDocs",
+    url: "https://github.com/YunzaiDocs",
   },
 
   logo: "/logo.png",
 
   fullscreen: true,
 
-  repo: "DenFengLai/Yunzai-Docs",
+  repo: "YunzaiDocs/Yunzai-Docs",
 
   docsDir: "src",
   
@@ -28,6 +28,10 @@ export default hopeTheme({
   copyright: "Copyright © 2025 Yunzai-Bot 文档",
 
   externalLinkIcon: false,
+
+  contributors: "content",
+
+  changelog: true,
 
   // footer: "页脚",
 
@@ -53,7 +57,8 @@ export default hopeTheme({
     highlighter: {
       type: 'shiki',
       notationFocus: true,
-      notationHighlight: true
+      notationHighlight: true,
+      twoslash: true
     },
     align: true,
     attrs: true,
@@ -90,6 +95,7 @@ export default hopeTheme({
 
   // 插件配置
   plugins: {
+    git: true,
     copyCode: {
       showInMobile: true
     },

@@ -10,7 +10,9 @@
     "docs:update-package": "pnpm dlx vp-update"
   },
   "devDependencies": {
+    "@kaguyajs/trss-yunzai-types": "^1.2.1",
     "@vuepress/bundler-vite": "2.0.0-rc.26",
+    "@vuepress/shiki-twoslash": "2.0.0-rc.120",
     "@waline/client": "^3.8.0",
     "sass-embedded": "^1.97.1",
     "vue": "^3.5.26",
