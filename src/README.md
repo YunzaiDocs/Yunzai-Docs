@@ -16,6 +16,10 @@ actions:
   - text: 项目简介
     link: ./brief
     icon: book
+  
+  - text: 插件开发
+    link: ./dev/
+    icon: code
 
 copyright: false
 footer: Yunzai-Bot

@@ -16,9 +16,11 @@ export default hopeTheme({
   fullscreen: true,
 
   repo: "YunzaiDocs/Yunzai-Docs",
+  repoLabel: "GitHub",
+  docsBranch: "master",
 
   docsDir: "src",
-  
+
   breadcrumb: true,
 
   navbar,
@@ -95,11 +97,22 @@ export default hopeTheme({
 
   // 插件配置
   plugins: {
-    git: true,
+    git: {
+      contributors: {
+        info: [
+          {
+            username: "DenFengLai",
+            name: "等风来",
+            alias: "等风来"
+          }
+        ],
+        avatar: true
+      }
+    },
     copyCode: {
       showInMobile: true
     },
-    
+
     // comment: {
     //   provider: "Waline",
     //   serverURL: "https://waline.dengfenglai.icu/",

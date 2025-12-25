@@ -3,6 +3,7 @@ import { navbar } from "vuepress-theme-hope";
 export default navbar([
   "/",
   "/get-started/",
+  "/dev/",
   {
     text: "Yunzai版本",
     icon: "user-group",

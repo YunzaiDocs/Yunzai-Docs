@@ -11,7 +11,7 @@ Yunzai 提供了丰富的插件系统可以让你根据自己的需求开发插�
 
 本章将描述如何快速入门DIY属于自己的插件。
 
-## 前置条件 <Badge text="非必须" type="note" vertical="middle" />
+## 前置条件 <Badge text="非必需" type="note" vertical="middle" />
 
 为了拥有更好的开发体验，因此请先尽量满足以下条件
 
