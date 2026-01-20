@@ -1,6 +1,7 @@
 ---
 title: 快速上手
 icon: play
+order: 1
 tag:
   - 插件
   - 开发
