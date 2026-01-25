@@ -107,7 +107,7 @@ pnpm install
 
 在面板左侧边栏有一个`配置管理`和`插件配置`，这分别对应了项目(本体)配置文件与插件配置文件
 
-![](/picture/guoba-1.png)
+![](/assets/image/guoba-1.png)
 
 在Web界面上完成修改后点击保存按钮即可。
 

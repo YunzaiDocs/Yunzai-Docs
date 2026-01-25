@@ -20,7 +20,7 @@ Miao-Yunzai 设计之初采用[ICQQ]进行登录，由于QQ平台需要签名校
 
 > 启动命令 node app
 
-![login_p2](/picture/miao/login_p2.jpg)
+![login_p2](/assets/image/miao/login_p2.jpg)
 
 要求你依次输入
 
@@ -43,7 +43,7 @@ QQ账号和密码存放在 `qq.yaml` 内，可以打开进行修改
 ---
 
 ::: warning 签名api异常
-![sign_error](/picture/miao/sign_error.png)
+![sign_error](/assets/image/miao/sign_error.png)
 当出现类似`签名api异常`的提示后，恭喜你可以不用继续登录了，因为即使你登录上了，也无法正常使用，需要更换签名api了。
 :::
 
@@ -53,7 +53,7 @@ QQ账号和密码存放在 `qq.yaml` 内，可以打开进行修改
 
 当各项配置正确时，进入登录流程时会触发滑动验证码，俗称人机验证
 
-![p3](/picture/miao/login_p3.jpg)
+![p3](/assets/image/miao/login_p3.jpg)
 
 有三种验证方式
 
