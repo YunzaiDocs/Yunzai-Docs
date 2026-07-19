@@ -11,8 +11,7 @@ tag:
 ---
 
 ::: warning 扩展资料
-本站插件开发以 TRSS-Yunzai 为主线。Miao-Yunzai 当前主要作为旧插件兼容、迁移和能力差异参考
-
+本站插件开发以 TRSS-Yunzai 为主线进行讲解。得益于两款项目深厚的共同基础，大部分示例与接口同样适用于 Miao-Yunzai。
 本文仅在你需要维护 Miao-Yunzai 插件、从 Miao 迁移至 TRSS，或确实需要兼容两个框架时使用。普通 TRSS 插件开发请优先阅读[《TRSS-Yunzai 插件开发完整 Wiki》](../full-wiki.md)。
 :::
 

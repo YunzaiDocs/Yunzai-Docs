@@ -22,7 +22,7 @@ actions:
     icon: code
 
 copyright: false
-footer: Yunzai-Bot
+footer: 'Yunzai-Bot · <a href="/about.html">关于本站</a>'
 
 features:
   - title: 简单易安装
