@@ -308,9 +308,11 @@ npm config set registry https://registry.npmmirror.com
   :::
 
 @tab Windows
+打开终端执行一键安装
 
-[点我](https://blog.csdn.net/mukes/article/details/115693833)
-
+  ```bash
+  winget install --id Git.Git -e --source winget
+  ```
 :::
 
 ## 6. ffmpeg (可选)
@@ -320,7 +322,10 @@ npm config set registry https://registry.npmmirror.com
 您可以从 [ffmpeg官网](https://ffmpeg.org/download.html) 下载并安装 ffmpeg
 
 ::: details Windows 安装教程
-[点我](https://yunz.cc/289.html#H1-0)
+打开终端执行一键安装
+  ```bash
+  winget install ffmpeg
+  ```
 :::
 
 ::: details Linux 安装教程

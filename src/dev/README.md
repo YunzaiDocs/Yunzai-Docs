@@ -37,4 +37,21 @@ actions:
     link: ./quick-start
 ```
 
+## TRSS-Yunzai 完整开发文档
 
+::: warning 适用范围
+以下完整 Wiki 基于 TRSS-Yunzai 源码校对，由于两款项目具有深厚的共同基础，大部分示例与接口同样适用于 Miao-Yunzai
+针对两款项目的架构差异，文档中提供了部分兼容性扩展说明 ,详情请查看下面的扩展阅读
+:::
+
+```component VPBanner
+title: TRSS-Yunzai 插件开发完整 Wiki
+logo: /assets/logo/js.png
+background: var(--bg-2)
+color: var(--banner-text)
+actions:
+  - text: 查看完整 Wiki
+    link: ./full-wiki
+```
+
+> 扩展阅读：[Miao与TRSS-Yunzai的差异和兼容](./extension/miao-compat.md)
