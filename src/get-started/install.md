@@ -68,13 +68,13 @@ category:
   @tab Github
 
   ```sh
-  git clone --depth 1 https://github.com/TimeRainStarSky/Yunzai
+  git clone --depth=1 https://github.com/TimeRainStarSky/Yunzai
   ```
 
   @tab Gitee
 
   ```sh
-  git clone --depth 1 https://gitee.com/TimeRainStarSky/Yunzai
+  git clone --depth=1 https://gitee.com/TimeRainStarSky/Yunzai
   ```
 
 :::
