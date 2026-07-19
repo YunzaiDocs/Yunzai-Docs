@@ -37,4 +37,18 @@ actions:
     link: ./quick-start
 ```
 
+## TRSS-Yunzai 完整开发文档
 
+::: warning 适用范围
+以下完整 Wiki 基于 TRSS-Yunzai 源码校对，仅适用于 TRSS-Yunzai，不保证兼容 Miao-Yunzai。
+:::
+
+```component VPBanner
+title: TRSS-Yunzai 插件开发完整 Wiki
+logo: /assets/logo/js.png
+background: var(--bg-2)
+color: var(--banner-text)
+actions:
+  - text: 查看完整 Wiki
+    link: ./full-wiki
+```
