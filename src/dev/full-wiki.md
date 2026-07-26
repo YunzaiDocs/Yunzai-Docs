@@ -11,13 +11,13 @@ tag:
 
 ::: warning 适用范围声明
 本文档基于 TRSS-Yunzai 源码编写和校对，**仅适用于 TRSS-Yunzai 插件开发**。
-
-由于 TRSS-Yunzai 与 Miao-Yunzai 在插件加载、事件对象、Runtime、渲染器、适配器及部分 API 实现上存在差异，本文中的代码和结论不保证兼容 Miao-Yunzai。开发跨框架插件时，请分别核对对应框架源码并进行实际测试。
+由于两款项目具有深厚的共同基础，大部分示例与接口同样适用于 Miao-Yunzai
+针对两款项目的架构差异，文档中提供了部分兼容性扩展说明 ,详情请查看扩展阅读 
 :::
 
 > 基于 [TimeRainStarSky/Yunzai](https://github.com/TimeRainStarSky/Yunzai) 源码校对：TRSS-Yunzai v3.1.3 / Node.js ESM / 事件驱动 + 插件化架构  
 > 源码引用固定到提交 [`a3d75d5`](https://github.com/TimeRainStarSky/Yunzai/tree/a3d75d5dd28af6e36d7b697d061038df53c8b78f)，避免 `main` 分支后续更新导致文件行号失效。  
-> 本文档由 `插件开发wiki.md` 与 `公共工具API参考.md` 合并修正而来，原文件未修改。
+
 
 ---
 
